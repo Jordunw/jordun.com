@@ -10,7 +10,7 @@ interface ButtonProps {
 const FooterButton: React.FC<ButtonProps> = ({ to, children }) => {
   return (
     <a href={to} target="_blank" rel="noopener noreferrer" className="px-1.5">
-      <button className="w-12 h-12 p-2 rounded-md hover:bg-primary border flex items-center justify-center">
+      <button className="w-12 h-12 p-2 rounded-md bg-background hover:bg-primary border flex items-center justify-center">
         {children}
       </button>
     </a>
@@ -60,7 +60,7 @@ const EmailButton = ({ w = 24, h = 24 }) => {
 const Footer = () => {
   return (
     <footer className="fixed bottom-0 left-0 w-full p-4">
-      <div className="flex justify-end space-x-4">
+      <div className="flex justify-end md:lg:space-x-4 space-x-1">
         <EmailButton w={28} h={28} />
         <LinkedInButton w={22} h={22} />
         <GithubButton />

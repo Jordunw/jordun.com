@@ -12,17 +12,17 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ git, title }) => {
   return (
     <div className="group py-2">
-      <div className="max-w-3xl md:lg:min-w-[48rem] min-w-[32rem] max-h-48 rounded-lg border-2 border-secondary overflow-hidden relative">
+      <div className="md:lg:max-w-3xl max-w-[12rem] md:lg:min-w-[48rem] min-w-[24rem] max-h-48 rounded-lg border-2 border-secondary overflow-hidden relative">
         <div className="flex h-full">
           {/* left half header */}
-          <div className="flex-1 flex items-center px-6 md:lg:w-[70%] w-[60%]">
+          <div className="flex-1 flex items-center px-6 w-[70%]">
             <h3 className="text-lg text-cwhite text-nowrap text-ellipsis overflow-hidden">
               {title}
             </h3>
           </div>
           {/* right half */}
           <div
-            className="flex flex-col items-center md:lg:w-[30%] w-[40%] py-3 px-3 h-full bg-primary hover:bg-primarylight cursor-pointer justify-center"
+            className="flex flex-col items-center w-[30%] py-3 px-3 h-full bg-primary hover:bg-primarylight cursor-pointer justify-center"
             onClick={() => window.open(GITHUB + git, "_blank")}
           >
             <span className="text-white font-semibold opacity-80">

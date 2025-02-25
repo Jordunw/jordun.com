@@ -67,10 +67,10 @@ const Navbar = () => {
   return (
     <nav className="text-cwhite mx-[5vw]">
       <div className="py-4 flex items-center justify-between border-secondary max-w-5xl mx-auto">
-        <div className="md:lg:text-3xl text-xl font-semibold group text-nowrap">
+        <div className="md:lg:text-3xl text-base font-semibold group text-nowrap">
           <TitleHomeLink />
         </div>
-        <div className="md:lg:text-base text-sm flex space-x-4">
+        <div className="md:lg:text-base text-xs flex md:lg:space-x-4 space-x-2">
           <AboutLink />
           <ExperienceLink />
           <ProjectsLink />
