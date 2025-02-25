@@ -5,12 +5,13 @@
 
 import Link from "next/link";
 import { HOMEPAGE, NAME } from "@/app/constants";
-import { scrollToSection } from "@/utils";
+import { scrollToSection, LinkHoverAnimation } from "@/utils";
 
 const TitleHomeLink = () => {
   return (
     <Link href={HOMEPAGE} className="relative">
       {NAME}
+      {/* custom styling for this */}
       <span className="absolute left-0 -bottom-1 block h-0.5 bg-primarylight w-0 transition-all duration-300 group-hover:w-full ease-out"></span>
     </Link>
   );
@@ -20,7 +21,7 @@ const AboutLink = () => {
   return (
     <button onClick={() => scrollToSection("about")} className="relative group">
       About
-      <span className="absolute left-0 block h-0.5 bg-primarylight w-0 transition-all duration-300 group-hover:w-full ease-out"></span>
+      <LinkHoverAnimation />
     </button>
   );
 };
@@ -32,7 +33,19 @@ const ProjectsLink = () => {
       className="relative group"
     >
       Projects
-      <span className="absolute left-0 block h-0.5 bg-primarylight w-0 transition-all duration-300 group-hover:w-full ease-out"></span>
+      <LinkHoverAnimation />
+    </button>
+  );
+};
+
+const ExperienceLink = () => {
+  return (
+    <button
+      onClick={() => scrollToSection("experience")}
+      className="relative group"
+    >
+      Experience
+      <LinkHoverAnimation />
     </button>
   );
 };
@@ -45,20 +58,21 @@ const ResumeLink = () => {
       target="_blank"
     >
       Resume
-      <span className="absolute left-0 block h-0.5 bg-primarylight w-0 transition-all duration-300 group-hover:w-full ease-out"></span>
+      <LinkHoverAnimation />
     </Link>
   );
 };
 
 const Navbar = () => {
   return (
-    <nav className="text-cwhite px-48">
+    <nav className="text-cwhite mx-[5vw]">
       <div className="py-4 flex items-center justify-between border-secondary max-w-5xl mx-auto">
-        <div className="text-3xl font-semibold group">
+        <div className="md:lg:text-3xl text-xl font-semibold group text-nowrap">
           <TitleHomeLink />
         </div>
-        <div className="flex space-x-4">
+        <div className="md:lg:text-base text-sm flex space-x-4">
           <AboutLink />
+          <ExperienceLink />
           <ProjectsLink />
           <ResumeLink />
         </div>

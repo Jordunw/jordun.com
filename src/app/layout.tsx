@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { montserrat } from "./fonts/fonts";
 import Navbar from "./components/navbar/client/navbar";
@@ -7,6 +7,11 @@ import Footer from "./components/navbar/client/footer";
 export const metadata: Metadata = {
   title: "Forest McKinney",
   description: "My portfolio, personal info, and professional qualifications",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
