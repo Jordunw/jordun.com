@@ -21,18 +21,30 @@ export default {
       },
       animation: {
         flash: "flash 2s ease-out",
+        fadeIn: "fadeIn 2s ease-in forwards",
+        fadeOut: "fadeOut 2s ease-out forwards"
       },
       keyframes: {
         flash: {
           "0%": { backgroundColor: "transparent" },
           "50%": { backgroundColor: "var(--background-light)" },
           "100%": { backgroundColor: "transparent" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" }
+        },
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" }
         }
       }
     }
   },
   safelist: [
     'animate-flash',
+    'animate-fadeIn',
+    'animate-fadeOut'
   ],
   plugins: [],
 } satisfies Config;

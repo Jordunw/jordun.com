@@ -12,7 +12,7 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ git, title }) => {
   return (
     <div className="group py-2">
-      <div className="min-w-[40rem] max-h-48 rounded-lg border-2 border-secondary overflow-hidden relative">
+      <div className="max-w-3xl min-w-[48rem] max-h-48 rounded-lg border-2 border-secondary overflow-hidden relative">
         <div className="flex h-full">
           {/* left half header */}
           <div className="flex-1 flex items-center px-6 w-[70%]">
