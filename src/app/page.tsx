@@ -63,7 +63,7 @@ export default function Home() {
         </p>
         <div className="flex flex-row space-x-4 py-8 max-w-3xl">
           <div className="flex-1 bg-primary p-6 rounded-md shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-in-out">
-            <h3 className="md:lg:text-xl text-md text-cwhite font-semibold">
+            <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
               Software Developer Co-op
             </h3>
             <p className="md:lg:text-sm text-xs text-cwhite mt-2">
@@ -77,7 +77,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex-1 bg-primary p-6 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ease-in-out">
-            <h3 className="md:lg:text-xl text-md text-cwhite font-semibold">
+            <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
               Software Developer
             </h3>
             <p className="md:lg:text-sm text-xs text-cwhite mt-2">

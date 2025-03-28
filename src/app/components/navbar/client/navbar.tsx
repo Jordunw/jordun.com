@@ -1,8 +1,5 @@
 "use client";
 
-// 勉強する
-// 新しいの
-
 import Link from "next/link";
 import { HOMEPAGE, NAME } from "@/app/constants";
 import { scrollToSection, LinkHoverAnimation } from "@/utils";
