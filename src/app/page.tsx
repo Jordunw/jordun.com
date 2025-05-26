@@ -69,7 +69,7 @@ export default function Home() {
             <p className="md:lg:text-sm text-xs text-cwhite mt-2">
               Nuuly/URBN - Philadelphia, PA
               <br />
-              <i>Sept 2024 - Present</i>
+              <i>Sept 2024 - Apr 2025</i>
             </p>
             <p className="text-cwhite mt-2">
               Backend development and maintenance of cloud-based web
