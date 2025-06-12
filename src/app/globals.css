@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #1c1f1f;
-  --background-light: #313737;
+  --background: #1f3f3f;
+  --background-light: #1d2a3f;
   --cwhite: #eef2ff;
   --primary: #386464;
-  --primary-light: #569999;
+  --primary-light: #66b1b1;
   --primary-light2: #81e6e6;
+  --primary-gradient: #386464;
+  --primary-gradient2: #2b5252;
   --secondary: #898b98;
   --secondary-light: #bcbfcc;
   --tertiary: #c8ddcc;
@@ -16,7 +18,13 @@
 
 body {
   color: var(--textwhite);
-  background: var(--background);
+  background: #1f3f3f;
+  background: linear-gradient(
+    120deg,
+    rgba(29, 42, 43, 1) 0%,
+    rgba(29, 42, 63, 1) 50%,
+    rgba(29, 42, 53, 1) 100%
+  );
   font-family: Arial, Helvetica, sans-serif;
 }
 

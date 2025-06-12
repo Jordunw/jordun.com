@@ -62,7 +62,7 @@ const ResumeLink = () => {
 
 const Navbar = () => {
   return (
-    <nav className="text-cwhite mx-[5vw]">
+    <nav className="text-cwhite mx-[5vw] my-[1vw]">
       <div className="py-4 flex items-center justify-between border-secondary max-w-5xl mx-auto">
         <div className="md:lg:text-3xl text-base font-semibold group text-nowrap">
           <TitleHomeLink />

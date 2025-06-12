@@ -9,8 +9,8 @@ interface ButtonProps {
 
 const FooterButton: React.FC<ButtonProps> = ({ to, children }) => {
   return (
-    <a href={to} target="_blank" rel="noopener noreferrer" className="px-1.5">
-      <button className="w-12 h-12 p-2 rounded-md bg-background hover:bg-primary border flex items-center justify-center">
+    <a href={to} target="_blank" rel="noopener noreferrer" className="px-1">
+      <button className="w-12 h-12 rounded-md bg-backgroundlight hover:bg-primarylight hover:-translate-y-1 hover:shadow-xl transition-all duration-100 ease-in-out border flex items-center justify-center">
         {children}
       </button>
     </a>

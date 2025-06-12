@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           <main className={`${montserrat.className} antialiased flex-1`}>
             <Navbar />
-            <div className="py-10">{children}</div>
+            <div>{children}</div>
           </main>
           <Footer />
         </div>

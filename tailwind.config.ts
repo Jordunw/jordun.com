@@ -15,6 +15,8 @@ export default {
         primary: "var(--primary)",
         primarylight: "var(--primary-light)",
         primarylight2: "var(--primary-light2)",
+        primarygradient: "var(--primary-gradient)",
+        primarygradient2: "var(--primary-gradient2)",
         secondary: "var(--secondary)",
         secondarylight: "var(--secondary-light)",
         tertiary: "var(--tertiary)"
@@ -27,7 +29,7 @@ export default {
       keyframes: {
         flash: {
           "0%": { backgroundColor: "transparent" },
-          "50%": { backgroundColor: "var(--background-light)" },
+          "50%": { backgroundColor: "var(--tertiary)" },
           "100%": { backgroundColor: "transparent" },
         },
         fadeIn: {
