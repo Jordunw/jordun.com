@@ -1,10 +1,12 @@
-export const scrollToSection = (id: string) => {
+// reenable flash effect by flipping default value
+export const scrollToSection = (id: string, flash = false) => {
   const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({
-      block: "start",
+      inline: "start",
       behavior: "smooth",
     });
+    if(!flash) return;
     setTimeout(() => {
       window.location.hash = `#${id}`;
       element.classList.add("animate-flash");

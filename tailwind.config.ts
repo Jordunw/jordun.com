@@ -22,7 +22,7 @@ export default {
         tertiary: "var(--tertiary)"
       },
       animation: {
-        flash: "flash 2s ease-out",
+        flash: "flash 2s ease-in-out",
         fadeIn: "fadeIn 2s ease-in forwards",
         fadeOut: "fadeOut 2s ease-out forwards"
       },

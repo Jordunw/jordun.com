@@ -8,7 +8,6 @@ const TitleHomeLink = () => {
   return (
     <Link href={HOMEPAGE} className="relative">
       {NAME}
-      {/* custom styling for this */}
       <span className="absolute left-0 -bottom-1 block h-0.5 bg-primarylight w-0 transition-all duration-300 group-hover:w-full ease-out"></span>
     </Link>
   );

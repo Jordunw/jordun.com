@@ -1,7 +1,7 @@
 "use client";
 
 import Project from "./components/navbar/client/projects";
-import { LinkHoverAnimation } from "@/utils";
+import { LinkHoverAnimation, scrollToSection } from "@/utils";
 
 export default function Home() {
   return (
@@ -20,17 +20,21 @@ export default function Home() {
             Drexel University - Philadelphia, PA
           </h3>
         </div>
-        <div className="mt-auto md:lg:mb-0 mb-4 size-10 animate-bounce rounded-md p-2 ring-1 bg-transparent ring-white/20">
-          <svg className="size-6 text-primarylight fill-none stroke-current">
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </div>
+        <button className="mt-auto md:lg:mb-0 mb-4"
+          onClick={() => scrollToSection("about", false)}>
+          <div className="size-10 animate-bounce rounded-md p-2 ring-1 bg-transparent ring-white/20">
+            <svg className="size-6 text-primarylight fill-none stroke-current">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
+        </button>
       </div>
 
       {/* ABOUT ME */}
+      <div className="py-8"></div>
       <div
         id="about"
-        className="flex flex-col min-w-full items-center rounded-md"
+        className="flex flex-col min-w-full items-center rounded-md pt-4"
       >
         <div className="pb-4">
           <h2 className="text-2xl text-cwhite font-semibold">About Me</h2>
@@ -67,7 +71,7 @@ export default function Home() {
           <div
             className="flex-1 bg-gradient-to-tr from-primarygradient to-primarygradient2 p-6 rounded-md shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-in-out cursor-pointer"
             onClick={() =>
-              window.open("https://apexfintechsolutions.com/", "_blank")
+              window.open("https://nuuly.com/", "_blank")
             }
           >
             <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
@@ -85,7 +89,7 @@ export default function Home() {
           </div>
           <div
             className="flex-1 bg-gradient-to-tr from-primarygradient2 to-primarygradient p-6 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ease-in-out cursor-pointer"
-            onClick={() => window.open("https://nuuly.com/", "_blank")}
+            onClick={() => window.open("https://apexfintechsolutions.com/", "_blank")}
           >
             <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
               Software Developer

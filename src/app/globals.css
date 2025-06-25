@@ -8,6 +8,7 @@
   --cwhite: #eef2ff;
   --primary: #386464;
   --primary-light: #66b1b1;
+  --primary-light-rgb: 102, 177, 177;
   --primary-light2: #81e6e6;
   --primary-gradient: #386464;
   --primary-gradient2: #2b5252;
@@ -37,7 +38,7 @@ body {
     background-color: transparent;
   }
   50% {
-    background-color: var(--background-light);
+    background-color: rgba(var(--primary-light-rgb), 0.1);
   }
   100% {
     background-color: transparent;
