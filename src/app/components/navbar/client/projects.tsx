@@ -1,6 +1,7 @@
 "use client";
 
 import { GITHUB } from "@/app/constants";
+import Link from "next/link";
 
 interface ProjectProps {
   git: string;
@@ -29,6 +30,32 @@ const Project: React.FC<ProjectProps> = ({ git, title }) => {
               View on GitHub &rarr;
             </span>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ProjectHTMLLink: React.FC<ProjectProps> = ({ link, title }) => {
+  return (
+    <div className="group py-2">
+      <div className="md:lg:max-w-3xl max-w-[12rem] md:lg:min-w-[48rem] min-w-[24rem] max-h-48 rounded-lg border-2 border-secondary shadow-lg overflow-hidden relative">
+        <div className="flex h-full">
+          {/* left half header */}
+          <div className="flex-1 flex items-center px-6 w-[70%]">
+            <h3 className="text-lg text-cwhite text-nowrap font-semibold text-ellipsis overflow-hidden">
+              {title}
+            </h3>
+          </div>
+          {/* right half */}
+          <a
+            href={link}
+            className="flex flex-col items-center w-[30%] py-3 px-3 h-full bg-gradient-to-r from-primarygradient to-primarygradient2 hover:from-primary hover:to-primarylight cursor-pointer justify-center"
+          >
+            <span className="text-white font-semibold opacity-80">
+              View Project &rarr;
+            </span>
+          </a>
         </div>
       </div>
     </div>

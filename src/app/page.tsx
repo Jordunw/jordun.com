@@ -20,8 +20,10 @@ export default function Home() {
             Drexel University - Philadelphia, PA
           </h3>
         </div>
-        <button className="mt-auto md:lg:mb-0 mb-4"
-          onClick={() => scrollToSection("about", false)}>
+        <button
+          className="mt-auto md:lg:mb-0 mb-4"
+          onClick={() => scrollToSection("about", false)}
+        >
           <div className="size-10 animate-bounce rounded-md p-2 ring-1 bg-transparent ring-white/20">
             <svg className="size-6 text-primarylight fill-none stroke-current">
               <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -70,9 +72,7 @@ export default function Home() {
         <div className="flex flex-row space-x-4 py-8 max-w-3xl">
           <div
             className="flex-1 bg-gradient-to-tr from-primarygradient to-primarygradient2 p-6 rounded-md shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-in-out cursor-pointer"
-            onClick={() =>
-              window.open("https://nuuly.com/", "_blank")
-            }
+            onClick={() => window.open("https://nuuly.com/", "_blank")}
           >
             <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
               Software Developer Co-op
@@ -89,7 +89,9 @@ export default function Home() {
           </div>
           <div
             className="flex-1 bg-gradient-to-tr from-primarygradient2 to-primarygradient p-6 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ease-in-out cursor-pointer"
-            onClick={() => window.open("https://apexfintechsolutions.com/", "_blank")}
+            onClick={() =>
+              window.open("https://apexfintechsolutions.com/", "_blank")
+            }
           >
             <h3 className="md:lg:text-xl text-lg text-cwhite font-semibold">
               Software Developer
@@ -120,6 +122,10 @@ export default function Home() {
         </div>
         <Project git="synthesizer" title="Handmade Synthesizer" />
         <Project git="jordun.com" title="Personal Website" />
+        <ProjectHTMLLink
+          link="/deadlock-meta-analyzer.html"
+          title="Deadlock Meta Analyzer"
+        />
       </div>
       <div className="py-12"></div>
       {/* SKILLS */}
