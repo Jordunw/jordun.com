@@ -9,6 +9,11 @@ interface ProjectProps {
   //   skills: [string];
 }
 
+interface ProjectHTMLLinkProps {
+  link: string;
+  title: string;
+}
+
 const Project: React.FC<ProjectProps> = ({ git, title }) => {
   return (
     <div className="group py-2">
@@ -35,7 +40,7 @@ const Project: React.FC<ProjectProps> = ({ git, title }) => {
   );
 };
 
-const ProjectHTMLLink: React.FC<ProjectProps> = ({ link, title }) => {
+const ProjectHTMLLink: React.FC<ProjectHTMLLinkProps> = ({ link, title }) => {
   return (
     <div className="group py-2">
       <div className="md:lg:max-w-3xl max-w-[12rem] md:lg:min-w-[48rem] min-w-[24rem] max-h-48 rounded-lg border-2 border-secondary shadow-lg overflow-hidden relative">
