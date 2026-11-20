@@ -1,6 +1,6 @@
 "use client";
 
-import Project from "./components/navbar/client/projects";
+import Project, { ProjectHTMLLink } from "./components/navbar/client/projects";
 import { LinkHoverAnimation, scrollToSection } from "@/utils";
 
 export default function Home() {

@@ -1,7 +1,6 @@
 "use client";
 
 import { GITHUB } from "@/app/constants";
-import Link from "next/link";
 
 interface ProjectProps {
   git: string;
@@ -63,3 +62,4 @@ const ProjectHTMLLink: React.FC<ProjectProps> = ({ link, title }) => {
 };
 
 export default Project;
+export { ProjectHTMLLink };
